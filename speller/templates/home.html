@@ -1,0 +1,27 @@
+<title>Speller landing page</title>
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'app.css' %}">
+
+<body>
+
+<nav>
+	<h1 class="homenav">Speller</h1>
+</nav>
+	<h2 class="home_sub_heading">Welcome to Speller, please attach the file you would like to be spell checked below and we will have it checked for you in just a few moments! </h2>
+
+
+
+<form enctype="multipart/form-data" action="checked" method="post">
+	{% csrf_token %}
+    <input type="file"  name="this_file"/> 
+    <input type="submit" value="Submit" />
+</form>
+
+
+{% for n in words_list %}
+	{{ n }}
+{% endfor %}
+
+
+</body>

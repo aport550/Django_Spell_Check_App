@@ -1,0 +1,25 @@
+.homenav {
+	background-color:black;
+	color:white;
+	margin:10px;
+	padding:30px;
+}
+
+.home_sub_heading {
+	max-width:600px;margin:10px;
+}
+
+.just_padding {
+	padding-left:10px;
+}
+
+.container {
+	max-width:600px;
+	margin:10px;
+	padding:5px;
+	outline:1px solid black;
+}
+
+.mispelled {
+	color:red;
+}

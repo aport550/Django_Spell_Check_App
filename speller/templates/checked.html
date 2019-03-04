@@ -1,0 +1,30 @@
+
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'app.css' %}">
+
+
+<body>
+<nav>
+	<h1 class="homenav">Speller</h1>
+</nav>
+<h2 class= "just_padding">Checking Complete!!</h2>
+<h3 class = "just_padding">Your file fully checked for spelling errors is below.    Mispelled words are denoted by their red color.</h3>
+<div class = "container">
+{% for n in words_list %}
+	{% if n in d %}
+		{% if n in neither %}
+			{{ n }}
+		{% endif %}
+		{% if n in capital_words %}
+			{{ n|title }}
+		{% endif %}
+		{% if n in lwos %}
+			{{ n }}.
+		{% endif %}
+	{% else %}
+		<span class= "mispelled">{{ n }}</span>
+	{% endif %}
+{% endfor %}
+</div>
+</body>
