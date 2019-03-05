@@ -70,6 +70,15 @@ acdbentity
 ace
 acer
 achieve
+aren't
+didn't
+wouldn't
+shouldn't
+didn't
+won't
+haven't
+hadn't
+isn't 
 achieved
 achievement
 achievements
