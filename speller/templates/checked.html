@@ -13,15 +13,7 @@
 <div class = "container">
 {% for n in words_list %}
 	{% if n in d %}
-		{% if n in neither %}
 			{{ n }}
-		{% endif %}
-		{% if n in capital_words %}
-			{{ n|title }}
-		{% endif %}
-		{% if n in lwos %}
-			{{ n }}.
-		{% endif %}
 	{% else %}
 		<span class= "mispelled">{{ n }}</span>
 	{% endif %}
